@@ -110,8 +110,23 @@
                         <option value="vinagre">Tradicional al vinagre</option>
                         <option value="Anchoa">Pepinillo con anchoas</option>
                     </optgroup>
-
                 </select>
+            </div>
+            <p></p>
+            <div>
+                <label for="observaciones">Observaciones:</label>
+                <br> <textarea id="observaciones" name="observaciones_cliente" rows="4" cols="50"
+                    placeholder="Indica si tienes alergias, preferencias de entrega, etc."></textarea>
+            </div>
+            <p></p>
+            <div>
+                <label for="adjuntos">Adjuntar archivo (PDF o JPG):</label>
+                <input type="file" id="adjuntos" name="archivos_pedido" accept=".pdf, .jpg, .jpeg" multiple>
+            </div>
+            <p></p>
+            <div>
+                <label for="progreso-pedido">Progreso (ejemplo estático):</label>
+                <progress id="progreso-pedido" value="50" max="100"> 50% </progress>
             </div>
 
         </fieldset>
