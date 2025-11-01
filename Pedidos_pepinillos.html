@@ -1,13 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepinillos Manolo</title>
 </head>
+
 <body>
     <h1>Pepinillos Manolo</h1>
-    <h2>Los mejores pepinillos</h2>
-    
+    <h2>Formulario de pedidos.</h2>
+    <p>En el siguiente formulario podrás realizar tu pedido de Pepinillos Manolo, los mejores pepinillos para llevarte a
+        la boca, tendrás que añadir tu dirección, nombre y apellidos y los campos indicados.</p>
+    <img src="pngegg.png" title="logo pepinillo" alt="Pepinillo con ojos y boca abierta" width="250" height="250">
+    <p></p>
+    <p></p>
+    Aquí encontrarás los <a href="https://www.aceitunasbravo.com/producto/pepinillos-finos-2/" target="_blank"
+        rel="noopener noreferrer">pepinillos recomendados.</a>
+    <h3>Pepinillos estrellas:</h3>
+    <ul>
+        <li>Pepinillo Rick, el pepinillo más vivo.</li>
+        <li>Pepinillo frunce-caras, el más ácido del mundo.</li>
+        <li>Pepinillo suspiro-picante, ¡cuidado, este pepinillo engaña!</li>
+
+    </ul>
+
+    <table border="1">
+
+        <caption>Resumen de los últimos pedidos</caption>
+
+        <thead>
+            <tr>
+                <th>Número de Pedido</th>
+                <th>Fecha</th>
+                <th>Importe</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>PED-145 "Pepinillo Rick"</td>
+                <td>28/10/2025</td>
+                <td>49.99€</td>
+            </tr>
+            <tr>
+                <td>PED-146 "suspiro-picante"</td>
+                <td>29/10/2025</td>
+                <td>85.50€</td>
+            </tr>
+            <tr>
+                <td>PED-147 "frunce-caras"</td>
+                <td>30/10/2025</td>
+                <td>35.99€</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Importe Total</td>
+
+                <td>171.48€</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <h3>Formulario de Pedido de Pepinillos</h3>
+    <form>
+        <fieldset>
+            <legend>Datos del cliente</legend>
+            <p></p>
+            <div>
+                <label for="nombre-cliente">Nombre:</label>
+                <input type="text" id="nombre-cliente" name="nombre_usuario" placeholder="Nombre y apellidos" required>
+                <p></p>
+                <label for="email-cliente">Correo electrónico:</label>
+                <input type="email" id="email-cliente" name="email_usuario" placeholder="correodeprueba@correo.es"
+                    required>
+                <p></p>
+                <label for="tel-cliente">Teléfono:</label>
+                <input type="tel" id="tel-cliente" name="telefono_usuario" placeholder="+34 600 123 456" required>
+            </div>
+        </fieldset>
+        <p></p>
+        <fieldset>
+            <legend>Detalles del pedido</legend>
+            <div>
+                <p></p>
+                <label for="cantidad-pedido">Cantidad (1-20 unidades):</label>
+                <input type="number" id="cantidad-pedido" name="cantidad" min="1" max="20">
+            </div>
+            <p></p>
+            <div>
+                <label for="tipo-pepino">Tipo de pepino:</label>
+                <select id="tipo-pepino" name="tipo_pepino" multiple>
+
+                    <optgroup label="Los Dramáticos">
+                        <option value="frunce-caras">El "Frunce-caras" (Súper Ácido)</option>
+                        <option value="suspiro-picante">El "Suspiro-Picante" (Picante Retardado)</option>
+                    </optgroup>
+
+                    <optgroup label="Los Personajes">
+                        <option value="don-pepon">Don Pepón (Extra Grande)</option>
+                        <option value="cruji-nitro">El "Cruji-Nitro" (Súper Crujiente)</option>
+                        <option value="Pepinillo Rick">Rick, el pepinillo con cara</option>
+                    </optgroup>
+
+                    <optgroup label="Clásicos">
+                        <option value="vinagre">Tradicional al vinagre</option>
+                        <option value="Anchoa">Pepinillo con anchoas</option>
+                    </optgroup>
+
+                </select>
+            </div>
+
+        </fieldset>
+        <p></p>
+        <div>
+            <button type="submit">Realizar pedido </button>
+            <button type="reset">Borrar</button>
+        </div>
+
+    </form>
+
 </body>
+
 </html>
